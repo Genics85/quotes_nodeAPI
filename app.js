@@ -22,6 +22,6 @@ app.all("*",(req,res)=>{
     res.send("OOPS");
 });
 
-app.listen(5000,()=>{
+app.listen(process.env.PORT||5000,()=>{
     console.log("connected to port 5000"); 
 }) 
